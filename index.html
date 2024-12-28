@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Valentine's Gift</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0b1522;
+        position: relative;
+      }
+
+      .heart {
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        position: relative;
+        transform: rotate(-45deg);
+        box-shadow: -10px 10px 90px #f20044;
+        animation: heart 0.6s linear infinite;
+        margin-bottom: 50px;
+      }
+
+      @keyframes heart {
+        0% {
+          transform: rotate(-45deg) scale(1.07);
+        }
+        80% {
+          transform: rotate(-45deg) scale(1);
+        }
+        100% {
+          transform: rotate(-45deg) scale(0.8);
+        }
+      }
+
+      .heart::before {
+        content: "";
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        top: -50%;
+        border-radius: 50px;
+        box-shadow: -10px -10px 90px #f20044;
+      }
+
+      .heart::after {
+        content: "";
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        right: -50%;
+        border-radius: 50px;
+        box-shadow: 10px 10px 90px #f20044;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      h1 {
+        color: aliceblue;
+        text-align: center;
+        font-family: "Press Start 2P", cursive;
+        margin: 0;
+        position: relative;
+        font-size: 16px;
+        text-shadow: 4px 4px 0 #000;
+        letter-spacing: 2px;
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heart"></div>
+      <h1>Te Amo Mucho</h1>
+      <h1></h1>
+      <h1>
+        Por que, te amo y punto no hay necesidad de un porque. El amor no
+        siempre <br />tiene explicaciones,no se trata de razones ni condiciones.
+        <br />Aveces simplemente amas y eso basta, podria decir que te amo me
+        haces feliz,<br />
+        porque llenas mis días de luz, porque eres unica y miles de cosas más,
+        pero <br />la verdad es que no te amo por lo que haces o dices, te amo
+        porque existes <br />porque eres tú y eso para mi es suficiente, el amor
+        verdadero no sigue una <br />lógica, no busca justificar lo que siente,
+        ni se mide por acciones esta ahí<br />libre, profundo y simplemente
+        sucede y está bien no tener un porqué, porque <br />cuando amas de
+        verdad entiendes que el amor no necesita razones, es un
+        <br />sentimiento puro, algo que suimplemente se siente con el corazón
+        <br />
+        Te amo y punto, porque el amor no siempre se explica pero siempre se
+        vive...<h1>
+        </h1><h1>
+        <h1>Y ya que es Diciembre el ultimo mes del año, no podria dejarlo terminar
+        <br />sin darte un regalito y decirte lo que significas para mí, este año no
+        <br />habría sido el mismo sin tu apoyo, sin tu presencia que aunque aveces te 
+        <br />parezca sencilla, para mi no lo es pues lo cambia todo. Cada instante que 
+        <br /> compartimos lo llevo conmigo muy adentro de mi corazón, como un recordatorio 
+        <br />de que no estoy solo y de que hay personas como tú que hacen que la vida sea 
+        <br />mejor, Gracias por ser tú, por quedarte cuando más lo necesitaba y por regalarme 
+        <br />este espacio en tu vida, espero que sepas lo especial que eres para mí siempre... Gracias
+        </h1>
+      </h1>
+    </div>
+  </body>
+</html>
